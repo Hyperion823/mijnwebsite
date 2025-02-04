@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Glegoo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+    <style>
+        @keyframes appear{
+            from{
+                opacity: 0;
+                clip-path: inset(100% 100% 0 0);
+            }
+            to{
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        .programs, .portfolio, .contact {
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sebastian</h1>
+        <button>about me</button>
+    </header>
+<div class="aboutme">
+    <img src="img/cyrIdTfoom4v2M.png" alt="profilephoto">
+    <p>I’m a 17-year-old design student passionate about exploring the intersection of creativity and technology. With a keen interest in visual storytelling and user experience, I’m honing my skills in design principles, crossmedia projects, and digital tools.  In my free time i enjoy reading books and comics, watching movies, playing games, doing sports and playing guitar, surfing is also something i really enjoy</p>
+</div>
+<div class="programs">
+    <h1>programs i mastered</h1>
+    <ul>
+        <li>photoshop</li>
+        <li>vs code</li>
+        <li>indesign</li>
+        <li>illustrator</li>
+    </ul>
+</div>
+<div class="portfolio">
+    <h1>portfolio</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur porro dolor excepturi veniam voluptas accusamus. Earum beatae eos at neque possimus itaque dicta fuga veniam recusandae, dolore doloribus? Iure, temporibus.</p>
+</div>
+<div class="contact">
+    <h1>contact</h1>
+    <img src="img/phone-icon-design-vector.jpg" alt="phone">
+    <p>0 470 19 39 32</p>
+    <img src="img/5f4186241d82a73e0e6f9f572585348d.jpg" alt="mail">
+    <p2>dobbelaeresebastian@gmail.com</p2>
+</div>

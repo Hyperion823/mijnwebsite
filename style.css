@@ -1,0 +1,349 @@
+/*
+Font-sizes in em/rem
+Element width in % of vw
+left, right margin en padding %
+flexbox
+*/
+
+/* ---- FONTS ---- */
+/* 
+font-family:;
+font-family:;
+font-family:;
+*/
+
+/* ---- COLORS ---- */
+/* 
+color:;
+color:;
+color:;
+*/
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    perspective: 0.0625rem;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header, .aboutme{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+header::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(img/risky-sitepu-DORyZ0XcYW4-unsplash.jpg) top center;
+    background-size: cover;
+    transform: translateZ(-0.0625rem) scale(2.2);
+    filter: blur(0.125rem);
+}
+
+
+header::after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(img/risky-sitepu-DORyZ0XcYW4-unsplash.png) top center;
+    background-size: cover;
+}
+
+header h1{
+    top: 10%;
+    transform: translateZ(-0.5px) scale(1.5,1.6) translate(-33%,-10%);
+}
+
+
+header h1{
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    font-family: "Glegoo", serif;
+    font-size: 15vw;
+    color: white;
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+header h1{
+    font-size: 3rem;
+    font-family: "Glegoo", serif;
+}
+
+button{
+    background-color: #053D38;
+    color: #F26800;
+    border-radius: 30%;
+    border: none;
+    padding: 0.3125rem;
+    font-size: 0.9375rem;
+    font-family: "Glegoo", serif;
+}
+
+.aboutme{
+    color:  #053D38;
+    background-image: url(img/richard-masquelier-0J7OEZ19dEo-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    font-size: 20px;
+    font-family: "Lancelot", serif;
+}
+
+.aboutme p{
+    padding-left: 40px;
+    padding-right: 2.5rem;
+}
+
+.aboutme img{
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;
+    margin-left: 2.5rem;
+}
+
+.programs{
+    background-image: url(img/martin-flischman-oCOF3a64M_k-unsplash.jpg);
+    background-size: 150%;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs H1{
+    font-size: 2.5rem;
+    font-family: "Glegoo", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.programs ul{
+    color: #F26800;
+    font-size: 2rem;
+    font-family: "Glegoo", serif;
+}
+
+.portfolio{
+    background-image: url(img/rafael-leao-PW0-vZD0wis-unsplash.jpg);
+    background-size: 125%;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F26800;
+}
+
+.portfolio h1{
+    font-size: 3rem;
+    font-family: "Glegoo", serif;
+    display: flex;
+
+}
+
+.portfolio p{
+    background-color: #053D38;
+    opacity: 70%;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+    font-family: "Lancelot", serif;
+}
+
+.contact img{
+    width: 2.8125rem;
+    height: 2.8125rem;
+}
+
+.contact{
+    color: #F26800;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    font-size: 3rem;
+    font-family: "Glegoo", serif;
+}
+
+.contact p{
+    color: white;
+    font-family: "Lancelot", serif;
+}
+
+
+@media (min-width : 700px){
+    header{
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+        height: 100vh;
+        background-size: cover;
+    }
+    header h1{
+        font-size: 6rem;
+    }
+    button{
+        padding: 0.4688rem;
+        font-size: 1.4063rem;
+    }
+    .aboutme{
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
+        font-size: 0.9375rem;
+        background-size: cover;
+        height: 100vh;
+    }
+    .aboutme p{
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    .aboutme img{
+        margin-left: 3.75rem;
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+    .programs{
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
+    }
+    .progrmas h1{
+        font-size: 4.5rem;
+    }
+    .programs ul{
+        font-size: 3rem;
+    }
+    .portfolio{
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
+    }
+    .portfolio h1{
+        font-size: 4.5rem;
+    }
+    .portfolio p{
+        margin-left: 3.75rem;
+        margin-right: 3.75rem;
+        font-size: 1.875rem;
+    }
+    .contact img{
+        width: 4.2188rem;
+        height: 4.2188rem;
+    }
+    .contact{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .contact h1{
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width : 1000px){
+    header{
+        padding-top: 9.375rem;
+        padding-bottom: 9.375rem;
+        background-size: cover;
+        height: 100vh;
+    }
+    header h1{
+        font-size: 4.5rem;
+    }
+    button{
+        padding: 10px;
+        font-size: 1.875rem;
+    }
+    .aboutme{
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+        font-size: 1.25rem;
+    }
+    .aboutme p{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .aboutme img{
+        margin-left: 5rem;
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .programs{
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+    }
+    .progrmas h1{
+        font-size: 6rem;
+    }
+    .programs ul{
+        font-size: 4rem;
+    }
+    .portfolio{
+        padding-top: 12.5rem;
+        padding-bottom: 12.5rem;
+    }
+    .portfolio h1{
+        font-size: 6rem;
+    }
+    .portfolio p{
+        margin-left: 5rem;
+        margin-right: 5rem;
+        font-size: 2.5rem;
+    }
+    .contact img{
+        width: 5.625rem;
+        height: 5.625rem;
+    }
+    .contact{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .contact h1{
+        font-size: 96px;
+    }
+}
