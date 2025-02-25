@@ -19,6 +19,10 @@ color:;
 color:;
 */
 
+
+
+
+
 body{
     width: 100%;
     height: 100vh;
@@ -45,18 +49,8 @@ header::before{
     background: url(img/risky-sitepu-DORyZ0XcYW4-unsplash.jpg) top center;
     background-size: cover;
     transform: translateZ(-0.0625rem) scale(2.2);
-    filter: blur(0.125rem);
 }
 
-
-header::after{
-    content:"";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(img/risky-sitepu-DORyZ0XcYW4-unsplash.png) top center;
-    background-size: cover;
-}
 
 header h1{
     top: 10%;
@@ -70,7 +64,7 @@ header h1{
     position: absolute;
     font-family: "Glegoo", serif;
     font-size: 15vw;
-    color: white;
+    color: black;
     transform: scale(1,1.1) translate(-50%, 10%);
 }
 
@@ -103,15 +97,6 @@ header h1{
     font-family: "Glegoo", serif;
 }
 
-button{
-    background-color: #053D38;
-    color: #F26800;
-    border-radius: 30%;
-    border: none;
-    padding: 0.3125rem;
-    font-size: 0.9375rem;
-    font-family: "Glegoo", serif;
-}
 
 .aboutme{
     color:  #053D38;
@@ -222,9 +207,10 @@ button{
 
 @media (min-width : 700px){
     header{
-        padding-top: 12.5rem;
-        padding-bottom: 12.5rem;
-        height: 100vh;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        height: 100%;
+        width: 100%;
         background-size: cover;
     }
     header h1{
@@ -239,7 +225,7 @@ button{
         padding-bottom: 9.375rem;
         font-size: 0.9375rem;
         background-size: cover;
-        height: 100vh;
+        height: 100%;
     }
     .aboutme p{
         padding-left: 3.75rem;
@@ -287,10 +273,9 @@ button{
 
 @media (min-width : 1000px){
     header{
-        padding-top: 9.375rem;
-        padding-bottom: 9.375rem;
         background-size: cover;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
     }
     header h1{
         font-size: 4.5rem;
@@ -300,9 +285,11 @@ button{
         font-size: 1.875rem;
     }
     .aboutme{
-        padding-top: 12.5rem;
-        padding-bottom: 12.5rem;
+        padding-top: 15rem;
+        padding-bottom: 30rem;
         font-size: 1.25rem;
+        background-size: cover;
+        height: 100vh;
     }
     .aboutme p{
         padding-left: 5rem;
