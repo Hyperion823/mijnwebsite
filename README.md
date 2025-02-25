@@ -1,1 +1,1 @@
-# mijnwebsite
+reflectie: Ik vond het moeilijk om aan de website te beginnen maar eens dat ik eraan begonnen was ging het goed. Ik vind dat de animaties en de parallax toevoegen goed gingen, het duurde even maar het lukte wel.
